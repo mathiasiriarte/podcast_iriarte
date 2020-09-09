@@ -1,0 +1,285 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header, section, footer {
+    padding: 2px 0;
+} */
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 4rem;
+    color: #060A24;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.blueDot {
+    color: #0000EC;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3rem;
+    color: #060A24;
+    letter-spacing: 0;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.pSize1 {
+    max-width: 628px;
+}
+
+.pSize2 {
+    max-width: 464px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.cleanList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cleanList li {
+    display: inline-block;
+    padding-left: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+.mainLogo {
+    width: 36px;
+}
+
+button {
+    font-family: 'IBM Plex Mono', medium;
+    background: #00F3BB;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    border: none;
+    padding: 16px 59px;
+}
+
+.h2White {
+    color: #ffffff;
+}
+
+.episodesContainer {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    padding-top: 137px;
+    padding-bottom: 180px;
+}
+iframe {
+    margin-bottom: 72px;
+    margin-left: 50px;
+}
+/* --CONTAINER AZUL ABAJO DE TODO*/
+
+.containerNews {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: 100%;
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 311px;
+    padding-bottom: 151px;
+}
+
+.h2Center {
+    text-align: center;
+}
+
+
+/* ESTILOS Flexbox */
+
+.navContainer {
+    display: flex;
+}
+
+header {
+    padding: 22px 50px 120px 50px;
+}
+
+header .navContainer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guests1 .guests2 {
+    /* display: flex; */
+    /* line-height: 0; */
+    display: inline-block;
+}
+.guestsImgs {
+    width: 447px;
+}
+
+.containerMore {
+    display: flex;
+}
+
+#section5 .containerMore {
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+/* .moreContent {
+    display: inline-block;
+} */
+.imgMore {
+    margin: 0 auto;
+}
+.pStyle {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    display: block;
+    max-width: 220px;
+}
+
+
+/* font-family: 'IBM Plex Mono', monospace;     
+Regular 400
+Medium 500
+
+font-family: 'IBM Plex Sans', sans-serif;
+Regular 400
+Semi-bold 600 */
+
+/* --MEDIA QUERYS-- */
+
+@media screen and (min-width: 769px) {
+    /* body {
+        background: yellow;
+    } */
+}
+
+/*-- INICIO HAMBURGUESA --
+
+input[type="checkbox"]:checked ~ ul {
+    background-color: red;
+    height: 240px;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+}
+header nav .menu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+header nav .menu span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s ease,
+    /* opacity: 0.55s ease; 
+}
+header nav .menu span:first-child {
+    transform-origin: 0% 0%;
+}
+header nav .menu span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+header nav .menu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 1px);
+}
+header nav .menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+header nav .menu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+
+FIN HAMBURGUESA --*/
+
+/*-- HOVER --*/
+a:link {
+    color: #060A24;;
+}
+
+a:visited {
+    color: #060A24;
+}
+
+a:hover {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    color: #00F3BB;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-decoration: line-through;
+}
+
+a:active {
+    font-size: 16px;
+    color: rgba(6,10,36,0.56);
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    font-family: 'IBM Plex Mono', medium;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+}
